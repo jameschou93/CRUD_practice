@@ -1,0 +1,14 @@
+<h1>Edit Rapper</h1> 
+
+<%= form_tag "/rappers/#{@rapper.id}", method: :patch do %>
+Name
+<input type="text" name="name" value="<%= @rapper.name %>">
+
+<br>
+
+Albums
+<input type="text" name="albums" value="<%= @rapper.albums %>">
+
+<input type="submit" value="submit">
+
+<% end %>

@@ -1,0 +1,12 @@
+<h1>New Rapper</h1>
+
+<%= form_tag '/rappers', method: :post do %>
+
+Name
+<input type="text" name="name">
+
+Albums
+<input type="text" name="albums">
+
+<input type="submit" value="submit">
+  <% end %>

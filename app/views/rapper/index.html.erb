@@ -1,0 +1,11 @@
+<%  @rappers.each do |rapper| %>
+<div>
+  <%= rapper.name %>
+  <%= rapper.albums %>
+<%= link_to "edit" ,"/rappers/#{rapper.id}/edit"%>
+
+<%= link_to "Delete" ,"/rappers/#{rapper.id}", method: :delete %>
+
+</div>
+
+<% end %>
